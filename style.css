@@ -1,0 +1,226 @@
+/*
+ * TryOn 法務文書サイトの共通スタイル。
+ * アプリ本体（Tokens.swift）と同じ思想: 白基調・高コントラスト・装飾を足さない。
+ * ダークモードは OS の設定に追従する。
+ */
+
+:root {
+  --bg: #f7f7f8;
+  --surface: #ffffff;
+  --text-primary: #101014;
+  --text-secondary: #5b5b66;
+  --accent: #1f3bde;
+  --separator: #e3e3e8;
+  --max-width: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101014;
+    --surface: #1a1a20;
+    --text-primary: #f4f4f6;
+    --text-secondary: #a6a6b2;
+    --accent: #8fa2ff;
+    --separator: #2c2c35;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  overflow-wrap: break-word;
+}
+
+header,
+main,
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+header {
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid var(--separator);
+}
+
+.app-name {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 2.75rem 0 0.75rem;
+  padding-top: 0.5rem;
+}
+
+h3 {
+  font-size: 1.02rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.meta {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+p,
+li {
+  color: var(--text-primary);
+}
+
+ul,
+ol {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* 要点を先に伝えるための囲み。長文を読まない人にも結論が届くようにする。 */
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--separator);
+  border-radius: 0.9rem;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.summary h2 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.summary ul {
+  margin-bottom: 0;
+}
+
+.notice {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.9rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.notice p:first-child {
+  margin-top: 0;
+}
+
+.notice p:last-child {
+  margin-bottom: 0;
+}
+
+/* 表は狭い画面で横スクロールさせ、本文自体は横に溢れさせない。 */
+.table-scroll {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  border: 1px solid var(--separator);
+  border-radius: 0.75rem;
+  background: var(--surface);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 30rem;
+  font-size: 0.94rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--separator);
+  vertical-align: top;
+}
+
+th {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.card-links {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.card-links li {
+  margin-bottom: 1rem;
+}
+
+.card-links a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--separator);
+  border-radius: 0.9rem;
+  padding: 1.1rem 1.4rem;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.card-links a:hover {
+  border-color: var(--accent);
+}
+
+.card-links strong {
+  display: block;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.card-links span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--separator);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+footer nav a {
+  margin-right: 1.25rem;
+  white-space: nowrap;
+}
