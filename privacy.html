@@ -12,7 +12,7 @@
 <header>
   <a class="app-name" href="index.html">TryOn</a>
   <h1>プライバシーポリシー</h1>
-  <p class="meta">制定日: 2026年8月5日 ／ 最終更新日: 2026年8月20日</p>
+  <p class="meta">制定日: 2026年8月5日 ／ 最終更新日: 2026年10月6日</p>
 </header>
 
 <main>
@@ -21,13 +21,13 @@
   <h2>写真の取扱い（要点）</h2>
   <ul>
     <li>登録した人物写真・服の画像・生成結果は、<strong>お客様の端末内に保存されます。</strong></li>
-    <li>画像は<strong>生成を実行するときだけ</strong>、当方のサーバー（Google Cloud Platform）を経由して<strong>Google LLCの生成AI（Gemini API）へ送信されます。</strong></li>
+    <li>画像は<strong>生成を実行するときだけ</strong>、当方のサーバー（Google Cloud Platform）を経由して<strong>生成AI（標準画質: Google LLCのGemini API／高画質: OpenAIのOpenAI API）へ送信されます。</strong>高画質は、初めて選択する際にアプリ内で改めて同意をいただいた場合のみ利用します。</li>
     <li>送信された画像は、当方のサーバーで<strong>メモリ上で処理した後ただちに破棄され、保存されません。</strong>データベースにも記録しません。</li>
     <li>お客様が生成を実行した時点で、<strong>この送信に同意いただいたもの</strong>として取り扱います（送信なしに生成することはできません）。</li>
     <li>当方は、お客様の<strong>氏名・メールアドレスを取得しません。</strong></li>
     <li>広告配信・行動追跡（トラッキング）は一切行いません。</li>
   </ul>
-  <p class="meta">※ 生成時に画像がGoogleへ送信されるため、「画像が端末から出ることはない」という説明はいたしません。実際の動作を正確にお伝えしています。</p>
+  <p class="meta">※ 生成時に画像がGoogleまたはOpenAIへ送信されるため、「画像が端末から出ることはない」という説明はいたしません。実際の動作を正確にお伝えしています。</p>
 </div>
 
 <p>TryOn運営チーム（以下「当方」といいます）は、iOS向けアプリケーション「TryOn」（以下「本アプリ」といいます）における個人情報および利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。</p>
@@ -92,6 +92,15 @@
   <li>詳細は<a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini APIの利用規約</a>および<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>をご確認ください。</li>
 </ul>
 
+<h3>3-2の2. 高画質での送信（OpenAI API）</h3>
+<p>お客様が<strong>高画質</strong>を選択して生成を実行したときに限り、人物写真と服の画像が当方のサーバーを経由してOpenAIの「OpenAI API」（画像生成モデル GPT Image）へ送信されます。高画質を初めて選択する際に、アプリ内で送信先を表示し、同意をいただいています。同意いただけない場合も、標準画質はご利用いただけます。</p>
+<ul>
+  <li>OpenAIの規約上、<strong>APIに送信されたデータは、OpenAIのモデルの学習（訓練）に使用されません。</strong></li>
+  <li>ただし、OpenAIは不正利用の監視のため、APIに送信されたデータを<strong>最長30日間保持する場合があります。</strong></li>
+  <li>OpenAIでの処理は日本国外（米国等）のサーバーで行われます。</li>
+  <li>詳細は<a href="https://openai.com/policies/services-agreement/" target="_blank" rel="noopener">OpenAIのサービス規約</a>および<a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAIのプライバシーポリシー</a>をご確認ください。</li>
+</ul>
+
 <h3>3-3. 送信された画像の破棄</h3>
 <p>当方のサーバーは、受け取った画像を<strong>メモリ上で処理するのみで、ディスクやストレージサービスに書き込みません。</strong>処理の完了後、画像はただちに破棄されます。データベースには、第2項に記載したメタデータのみを記録します。画像データやその一部をログに出力することもありません。</p>
 
@@ -122,6 +131,11 @@
       <th>Google LLC<br>（Gemini API）</th>
       <td>人物写真、服の画像</td>
       <td>試着画像の生成。<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>および<a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini APIの利用規約</a>が適用されます。</td>
+    </tr>
+    <tr>
+      <th>OpenAI<br>（OpenAI API）</th>
+      <td>人物写真、服の画像（高画質を選択した場合のみ）</td>
+      <td>高画質の試着画像の生成。<a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAIのプライバシーポリシー</a>および<a href="https://openai.com/policies/services-agreement/" target="_blank" rel="noopener">OpenAIのサービス規約</a>が適用されます。</td>
     </tr>
     <tr>
       <th>Google LLC<br>（Google Cloud Platform）</th>
