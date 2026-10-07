@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | TryOn</title>
+<meta name="description" content="Privacy Policy for TryOn, a virtual try-on app (English translation). Explains in detail how photos are handled.">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="ja" href="privacy.html">
+</head>
+<body>
+
+<header>
+  <a class="app-name" href="index.html">TryOn</a>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Established: August 5, 2026 / Last updated: October 7, 2026</p>
+</header>
+
+<main>
+
+<div class="notice">
+  <p>This English translation is provided for convenience. If there is any discrepancy, the Japanese version prevails. Japanese version: <a href="privacy.html" lang="ja" hreflang="ja">プライバシーポリシー</a></p>
+</div>
+
+<div class="summary">
+  <h2>Handling of Photos (Key Points)</h2>
+  <ul>
+    <li>Registered photos of people, clothing images and generated results are <strong>stored only on your device.</strong></li>
+    <li>Images are <strong>sent only when you execute a generation</strong>, via our server (Google Cloud Platform), <strong>to generative AI (the OpenAI API provided by OpenAI, or, as a backup, the Gemini API provided by Google LLC).</strong> Images are sent to OpenAI only if, in addition, you have given consent on a confirmation screen shown once in the App before first use (see Section 3 for details of the destinations).</li>
+    <li>Images sent are <strong>processed in memory on our server and then discarded immediately; they are not stored.</strong> They are not recorded in our database either.</li>
+    <li>When you execute a generation, <strong>you are treated as having consented to this sending</strong> (generation is not possible without sending).</li>
+    <li>We <strong>do not obtain your name or email address.</strong></li>
+    <li>We do not engage in any ad delivery or behavioral tracking.</li>
+  </ul>
+  <p class="meta">* Because images are sent to Google or OpenAI at the time of generation, we do not claim that “images never leave your device.” We describe the actual behavior accurately.</p>
+</div>
+
+<p>The TryOn Operations Team (“we”, “us” or “our”) establishes this Privacy Policy (the “Policy”) as set out below with respect to the handling of personal information and user information in the iOS application “TryOn” (the “App”).</p>
+
+<h2>1. Business Information</h2>
+<ul>
+  <li>Business name: TryOn Operations Team</li>
+  <li>Contact for personal information protection: <a href="mailto:kaiseiota0620@gmail.com">kaiseiota0620@gmail.com</a></li>
+</ul>
+
+<h2>2. Information We Obtain</h2>
+<p>The information we obtain is as follows.</p>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Type of information</th><th>Details</th><th>How obtained</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Account identifier</th>
+      <td>A user identifier specific to the App, issued through Sign in with Apple.<br><strong>We do not obtain your name or email address.</strong></td>
+      <td>Provided by Apple at login</td>
+    </tr>
+    <tr>
+      <th>Credit and plan information</th>
+      <td>Number of remaining credits, subscribed plan, plan expiration date, whether free credits have been granted, and creation and update dates and times</td>
+      <td>Recorded in the course of using the Service</td>
+    </tr>
+    <tr>
+      <th>Generation request records</th>
+      <td>Request ID, number of credits consumed, processing status (success / failure and refunded), type of failure, and date and time.<br><strong>These records do not include the images themselves or any features derived from the images.</strong></td>
+      <td>Recorded when a generation is executed</td>
+    </tr>
+    <tr>
+      <th>Purchase information</th>
+      <td>Transaction ID issued by Apple, purchased product ID, number of credits granted, and date and time.<br><strong>Payment information such as credit card numbers is not passed to us.</strong></td>
+      <td>At the time of purchase through the App Store</td>
+    </tr>
+    <tr>
+      <th>Image data</th>
+      <td>Photos of people and clothing images (described in detail in Section 3)</td>
+      <td>Received temporarily, only when a generation is executed</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>3. Handling of Image Data</h2>
+<p>Because it relates to the core function of the App, we explain the handling of images separately.</p>
+
+<h3>3-1. Storage on Your Device</h3>
+<p>The photos of people you register, the clothing images you import, the generated try-on images and Fit Report images are <strong>stored only on your device, in an area dedicated to the App, and are not stored on our server.</strong> They cannot be accessed by other apps and are protected so that they cannot be read while the device is locked. They are also excluded from iCloud backup.</p>
+
+<h3>3-2. Sending to Our Server and to the Gemini API</h3>
+<p>Only when you execute a try-on generation are your photos of people and clothing images sent to our server (Google Cloud Platform, region in Japan). For Standard quality in version 2.1 and earlier of the App, and in version 2.2 and later when the OpenAI API is temporarily unavailable, they are sent from there to “Gemini API”, a generative AI service provided by Google LLC (for other destinations, see Section 3-2-2). <strong>Executing a generation presupposes consent to this sending.</strong> Generation cannot be performed without sending.</p>
+<p>Google LLC handles the data as follows.</p>
+<ul>
+  <li>We use the paid API, and under Google’s terms, <strong>the images sent are not used to train Google’s AI models.</strong></li>
+  <li>However, Google <strong>may temporarily retain data sent to the API for the period specified in its policies</strong>, for purposes such as abuse monitoring.</li>
+  <li>Processing by Google may take place on servers outside Japan (such as in the United States).</li>
+  <li>For details, please see the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms of Service</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+</ul>
+
+<h3>3-2-2. Sending to the OpenAI API</h3>
+<p>In the following cases, your photos of people and clothing images are sent via our server to the “OpenAI API” provided by OpenAI (the image generation model GPT Image and the image-reading model GPT). Images are sent to the OpenAI API only if, in addition to the consent given by executing a generation (Section 3-2), you have reviewed the destination and given consent on a confirmation screen shown once in the App before first use.</p>
+<ul>
+  <li>When generating try-on images in version 2.2 and later of the App (all generations)</li>
+  <li>When generating with “High Quality” selected in version 2.1 of the App</li>
+  <li>When creating a <strong>Fit Report</strong> (似合う診断レポート; version 2.2 and later). For the diagnosis, in addition to Registered Photos, try-on images and images of the clothing tried on, <strong>images of clothing saved in your wardrobe (up to 12 items)</strong> are also sent</li>
+</ul>
+<p>In version 2.2 and later, when the OpenAI API is temporarily unavailable, generation may be performed as a backup using the Gemini API described in Section 3-2.</p>
+<ul>
+  <li>Under OpenAI’s terms, <strong>data sent to the API is not used to train OpenAI’s models.</strong></li>
+  <li>However, OpenAI <strong>may retain data sent to the API for up to 30 days</strong> for abuse monitoring.</li>
+  <li>Processing by OpenAI takes place on servers outside Japan (such as in the United States).</li>
+  <li>For details, please see the <a href="https://openai.com/policies/services-agreement/" target="_blank" rel="noopener">OpenAI Services Agreement</a> and the <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI Privacy Policy</a>.</li>
+</ul>
+
+<h3>3-3. Disposal of Images Sent</h3>
+<p>Our server <strong>only processes the images it receives in memory and does not write them to disk or to any storage service.</strong> Images are discarded immediately after processing is completed. Only the metadata described in Section 2 is recorded in our database. Neither image data nor any part of it is output to logs.</p>
+
+<h3>3-4. How to Delete</h3>
+<p>Images on your device are deleted when you retake or delete photos in the App, or when you uninstall the App. Because no images are stored on our server, there is no need to request deletion of images on the server side.</p>
+
+<h2>4. Purposes of Use</h2>
+<p>We use the information we obtain only for the following purposes:</p>
+<ol>
+  <li>To provide the Service, namely the generation of try-on images</li>
+  <li>To manage remaining credits and to prevent double charging and double deduction</li>
+  <li>To verify purchases and grant credits</li>
+  <li>To prevent unauthorized use and to operate the Service stably</li>
+  <li>To respond to inquiries</li>
+</ol>
+<p>We do not use the information we obtain for ad delivery, behavioral targeting or profiling. Nor do we track users across other companies’ services.</p>
+
+<h2>5. Provision to Third Parties</h2>
+<p>We do not provide your information to third parties except as required by laws and regulations. However, to the extent necessary to provide the Service, we entrust the handling of information to the following businesses.</p>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Contractor</th><th>Information entrusted</th><th>Purpose</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Google LLC<br>(Gemini API)</th>
+      <td>Photos of people, clothing images</td>
+      <td>Generation of try-on images. The <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms of Service</a> apply.</td>
+    </tr>
+    <tr>
+      <th>OpenAI<br>(OpenAI API)</th>
+      <td>Photos of people and clothing images (all generations in version 2.2 and later, and when High Quality is selected in version 2.1). When creating a Fit Report (version 2.2 and later), additionally try-on images and images of clothing saved in your wardrobe (up to 12 items)</td>
+      <td>Generation of try-on images and creation of Fit Reports. The <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI Privacy Policy</a> and the <a href="https://openai.com/policies/services-agreement/" target="_blank" rel="noopener">OpenAI Services Agreement</a> apply.</td>
+    </tr>
+    <tr>
+      <th>Google LLC<br>(Google Cloud Platform)</th>
+      <td>The metadata described in Section 2</td>
+      <td>Operation of servers and the database (stored in a region in Japan)</td>
+    </tr>
+    <tr>
+      <th>Apple Inc.</th>
+      <td>Authentication information, purchase information</td>
+      <td>Processing of login and payments. Handling by Apple is governed by the <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener">Apple Privacy Policy</a>.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="notice">
+  <p>In connection with the entrustment above, information may be processed outside Japan (such as in the United States). In selecting contractors, we confirm that appropriate security control measures are in place.</p>
+</div>
+
+<h2>6. Retention Period</h2>
+<ul>
+  <li><strong>Image data</strong>: Not stored on our server (Section 3). Data on your device is retained until you delete it.</li>
+  <li><strong>Generation request records</strong>: Automatically deleted once 30 days have passed from the date of recording.</li>
+  <li><strong>Account information, credit information and purchase information</strong>: Retained while the account is active and for any period required by law. If you request deletion, we delete it through the procedure in Section 8.</li>
+</ul>
+
+<h2>7. Security Control Measures</h2>
+<ul>
+  <li>All communications are encrypted using HTTPS.</li>
+  <li>API keys for generative AI are not included in the App itself and are managed as secrets on the server side.</li>
+  <li>Reading from and writing to the database is restricted so that it can be performed only from our server.</li>
+  <li>The operating system’s data protection features are applied to images on your device so that they cannot be read while the device is locked.</li>
+  <li>Our operations do not output image data or authentication tokens to logs.</li>
+</ul>
+
+<h2>8. Your Rights and Procedures</h2>
+<p>You may request disclosure, correction, suspension of use and erasure of your information held by us.</p>
+<ul>
+  <li><strong>Account deletion can be completed within the App</strong>: Settings (設定) → “Delete Account” (アカウントを削除). Your credits, plan and records on the server, and the photos and generated results on your device, are all deleted.</li>
+  <li>Other requests and questions: <a href="mailto:kaiseiota0620@gmail.com">kaiseiota0620@gmail.com</a></li>
+</ul>
+<p>We will respond within a reasonable period, to the extent we can verify your identity. Please note that deleting your account causes any remaining credits to expire. This contact point can also be accessed from the App’s settings screen.</p>
+<h3>8-2. Consent</h3>
+<p>Consent to this Policy is obtained as follows.</p>
+<ul>
+  <li>By starting to use the App (logging in with Sign in with Apple), you are deemed to have consented to this Policy.</li>
+  <li>With respect to the sending of images described in Section 3, you are deemed to have consented by executing a generation (including the creation of a Fit Report).</li>
+  <li>With respect to sending to the OpenAI API, your consent is additionally obtained on a confirmation screen shown once in the App before first use (Section 3-2-2).</li>
+</ul>
+<p>In particular, <strong>“sending of images at the time of generation” in Section 3 is central to the Service, and if you do not consent to it, the generation features cannot be used.</strong> You may withdraw your consent at any time by deleting your account, and we will not obtain any new information after withdrawal.</p>
+
+<h2>9. Minors</h2>
+<p>The Service prohibits the use of images that show any person under 18 years of age. We do not knowingly collect information from children under 13 years of age. If a parent or guardian becomes aware that their child has provided information to us, please contact us at the contact point in Section 8. We will delete it promptly.</p>
+
+<h2>10. About This Website</h2>
+<p>This website is hosted on GitHub Pages (GitHub, Inc.). GitHub may collect access logs (such as IP addresses) in order to provide its services. For details, please see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub General Privacy Statement</a>. We do not use access analytics tools or advertising cookies on this website.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may revise this Policy in response to changes in laws and regulations or in the content of the Service. If we make a significant change, we will announce it in advance in the App or on this website. The revised Policy takes effect when it is posted on this website.</p>
+
+<h2>12. Contact</h2>
+<ul>
+  <li>Business name: TryOn Operations Team</li>
+  <li>Contact: <a href="mailto:kaiseiota0620@gmail.com">kaiseiota0620@gmail.com</a></li>
+</ul>
+
+</main>
+
+<footer>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terms_en.html">Terms of Use</a>
+    <a href="privacy_en.html">Privacy Policy</a>
+    <a href="support_en.html">Contact</a>
+    <a href="privacy.html" lang="ja" hreflang="ja">日本語</a>
+  </nav>
+  <p>© 2026 TryOn Operations Team</p>
+</footer>
+
+</body>
+</html>
