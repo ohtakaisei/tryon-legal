@@ -54,8 +54,8 @@
   <tbody>
     <tr>
       <th>Account identifier</th>
-      <td>A user identifier specific to the App, issued through Sign in with Apple.<br><strong>We do not obtain your name or email address.</strong></td>
-      <td>Provided by Apple at login</td>
+      <td>If you use the App without signing in: an identifier that our server calculates from an identification code the App creates on your device (the code itself is not stored).<br>If you optionally sign in through Sign in with Apple: a user identifier specific to the App, issued by Apple.<br><strong>In either case, we do not obtain your name or email address.</strong></td>
+      <td>Created on the device when you start using the App / provided by Apple when you sign in</td>
     </tr>
     <tr>
       <th>Credit and plan information</th>
@@ -69,8 +69,13 @@
     </tr>
     <tr>
       <th>Purchase information</th>
-      <td>Transaction ID issued by Apple, purchased product ID, number of credits granted, and date and time.<br><strong>Payment information such as credit card numbers is not passed to us.</strong></td>
+      <td>Transaction ID issued by Apple (including the original transaction ID of a subscription, used when you restore purchases to confirm which account the plan belongs to), purchased product ID, number of credits granted, and date and time.<br><strong>Payment information such as credit card numbers is not passed to us.</strong></td>
       <td>At the time of purchase through the App Store</td>
+    </tr>
+    <tr>
+      <th>Unlimited plan usage</th>
+      <td>Monthly number of generations and amount of use (version 2.3 or later; Unlimited plan subscribers only). <strong>This is recorded in association with an irreversibly converted value, not the account identifier itself.</strong> In addition, the amount of use in the most recent hour and day is recorded in the account to apply the limits.</td>
+      <td>Recorded when a generation is performed</td>
     </tr>
     <tr>
       <th>Image data</th>
@@ -192,7 +197,7 @@
 <h3>8-2. Consent</h3>
 <p>Consent to this Policy is obtained as follows.</p>
 <ul>
-  <li>By starting to use the App (logging in with Sign in with Apple), you are deemed to have consented to this Policy.</li>
+  <li>By starting to use the App (tapping “Start Free” at the end of the onboarding; in version 2.2 or earlier, logging in with Sign in with Apple), you are deemed to have consented to this Policy.</li>
   <li>With respect to the sending of images described in Section 3, you are deemed to have consented by executing a generation (including the creation of a Fit Report).</li>
   <li>With respect to sending to the OpenAI API, your consent is additionally obtained on a confirmation screen shown once in the App before first use (Section 3-2-2).</li>
 </ul>
