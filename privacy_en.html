@@ -13,7 +13,7 @@
 <header>
   <a class="app-name" href="index.html">TryOn</a>
   <h1>Privacy Policy</h1>
-  <p class="meta">Established: August 5, 2026 / Last updated: October 8, 2026</p>
+  <p class="meta">Established: August 5, 2026 / Last updated: October 11, 2026</p>
 </header>
 
 <main>
@@ -29,13 +29,15 @@
     <li>Images are <strong>sent only when you execute a generation</strong>, via our server (Google Cloud Platform), <strong>to generative AI (the OpenAI API provided by OpenAI, or, as a backup, the Gemini API provided by Google LLC).</strong> Images are sent to OpenAI only if, in addition, you have given consent on a confirmation screen shown once in the App before first use (see Section 3 for details of the destinations).</li>
     <li>Images sent are <strong>processed in memory on our server and then discarded immediately; they are not stored.</strong> They are not recorded in our database either.</li>
     <li>When you execute a generation, <strong>you are treated as having consented to this sending</strong> (generation is not possible without sending).</li>
-    <li>We <strong>do not obtain your name or email address.</strong></li>
+    <li>We <strong>do not obtain your name or email address.</strong> Even if you optionally use “Sign in with Google” in the Android version, we use only the account identifier among the information received from Google, and we neither use nor store your name or email address (Section 2).</li>
     <li>We do not engage in any ad delivery or behavioral tracking.</li>
+    <li>In the Android version, we use Google components (ML Kit and MediaPipe) to check the person in photos and the category of clothing <strong>on your device</strong>. Images are not sent off the device for this, but these components may send performance metrics to Google (Section 3-8).</li>
   </ul>
   <p class="meta">* Because images are sent to Google or OpenAI at the time of generation, we do not claim that “images never leave your device.” We describe the actual behavior accurately.</p>
 </div>
 
-<p>The TryOn Operations Team (“we”, “us” or “our”) establishes this Privacy Policy (the “Policy”) as set out below with respect to the handling of personal information and user information in the iOS application “TryOn” (the “App”).</p>
+<p>The TryOn Operations Team (“we”, “us” or “our”) establishes this Privacy Policy (the “Policy”) as set out below with respect to the handling of personal information and user information in the application “TryOn” (the version for iPhone distributed on the App Store (the “iOS version”) and the version for Android distributed on Google Play (the “Android version”); collectively, the “App”).</p>
+<p>Unless “iOS version” or “Android version” is specified, this Policy applies to both. References to versions (such as “version 2.2 and later”) refer to versions of the iOS version. The Android version has been available since version 2.4.0, and statements about “version 2.4 or later” apply to it.</p>
 
 <h2>1. Business Information</h2>
 <ul>
@@ -54,8 +56,8 @@
   <tbody>
     <tr>
       <th>Account identifier</th>
-      <td>If you use the App without signing in: an identifier that our server calculates from an identification code the App creates on your device (the code itself is not stored).<br>If you optionally sign in through Sign in with Apple: a user identifier specific to the App, issued by Apple.<br><strong>In either case, we do not obtain your name or email address.</strong></td>
-      <td>Created on the device when you start using the App / provided by Apple when you sign in</td>
+      <td>If you use the App without signing in: an identifier that our server calculates from an identification code the App creates on your device (the code itself is not stored; see Section 3-9 for how the code is handled).<br>If you optionally sign in through Sign in with Apple in the iOS version: a user identifier specific to the App, issued by Apple.<br>If you optionally sign in through “Sign in with Google” in the Android version: the account identifier issued by Google (the “sub” contained in the Google ID token). The ID token may contain your name and email address, but we handle the ID token only in memory while verifying it to authenticate you, and <strong>do not use anything other than the identifier, nor store it or write it to logs.</strong><br><strong>In every case, we do not store your name or email address.</strong> An Apple account and a Google account are treated as separate accounts.</td>
+      <td>Created on the device when you start using the App / provided by Apple (iOS version) or Google (Android version) when you sign in</td>
     </tr>
     <tr>
       <th>Credit and plan information</th>
@@ -69,8 +71,8 @@
     </tr>
     <tr>
       <th>Purchase information</th>
-      <td>Transaction ID issued by Apple (including the original transaction ID of a subscription, used when you restore purchases to confirm which account the plan belongs to), purchased product ID, number of credits granted, and date and time.<br><strong>Payment information such as credit card numbers is not passed to us.</strong></td>
-      <td>At the time of purchase through the App Store</td>
+      <td>iOS version: Transaction ID issued by Apple (including the original transaction ID of a subscription, used when you restore purchases to confirm which account the plan belongs to), purchased product ID, number of credits granted, and date and time.<br>Android version: the purchase token and order number issued by Google Play, purchased product ID (subscription ID or product ID), number of credits granted, and date and time. The purchase token is used to verify and acknowledge the purchase, to process notifications such as subscription renewals, cancellations and refunds, and, when you restore purchases, to confirm which account the plan belongs to. Purchases are acknowledged by our server.<br>In both cases, to confirm which account a purchase belongs to, a per-account code (a value that does not include your name or similar information) is passed to the App Store or Google Play at the time of purchase.<br><strong>Payment information such as credit card numbers is not passed to us.</strong></td>
+      <td>At the time of purchase through the App Store or Google Play (for the Android version, subscription renewals, cancellations, refunds and the like are also received through notifications from Google Play)</td>
     </tr>
     <tr>
       <th>Pro plan usage</th>
@@ -92,6 +94,11 @@
       <td>Only if you use the personal color, body type or measurement analysis (version 2.4 or later): the photos you choose (a face photo or full-body photos), your answers to the body type questions, your height, and the results (described in Section 3-7). <strong>The analysis is optional.</strong></td>
       <td>Received temporarily, only when an analysis is executed (results are stored on your device)</td>
     </tr>
+    <tr>
+      <th>Server access logs</th>
+      <td>Records of the App’s connections to our server (IP address, User-Agent, date and time, etc.). These are used only to operate the server and prevent abuse, and <strong>are not used to estimate your location or identify you.</strong></td>
+      <td>Recorded automatically by our server (Google Cloud) during communication (automatically deleted after 30 days)</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -100,7 +107,11 @@
 <p>Because it relates to the core function of the App, we explain the handling of images separately.</p>
 
 <h3>3-1. Storage on Your Device</h3>
-<p>The photos of people you register, the clothing images you import, the generated try-on images and Fit Report images are <strong>stored only on your device, in an area dedicated to the App, and are not stored on our server.</strong> They cannot be accessed by other apps and are protected so that they cannot be read while the device is locked. They are also excluded from iCloud backup.</p>
+<p>The photos of people you register, the clothing images you import, the generated try-on images and Fit Report images are <strong>stored only on your device, in an area dedicated to the App, and are not stored on our server.</strong> They cannot be accessed by other apps.</p>
+<ul>
+  <li>iOS version: they are protected so that they cannot be read while the device is locked, and are excluded from iCloud backup.</li>
+  <li>Android version: they are excluded from Android cloud backup and from device-to-device data transfer (such as copying when you change devices).</li>
+</ul>
 
 <h3>3-2. Sending to Our Server and to the Gemini API</h3>
 <p>Only when you execute a try-on generation are your photos of people and clothing images sent to our server (Google Cloud Platform, region in Japan). For Standard quality in version 2.1 and earlier of the App, and in version 2.2 and later when the OpenAI API is temporarily unavailable, they are sent from there to “Gemini API”, a generative AI service provided by Google LLC (for other destinations, see Section 3-2-2). <strong>Executing a generation presupposes consent to this sending.</strong> Generation cannot be performed without sending.</p>
@@ -135,7 +146,7 @@
 
 <h3>3-5. Body Information and Garment Measurements (Size Check, Optional)</h3>
 <ol>
-  <li>If you use the size check (version 2.4 or later), the height, weight, usual clothing size and body measurements you enter are <strong>stored only on your device (Keychain)</strong> and are not synchronized to other devices. Garment sizes and measurements are stored on your device together with try-on results and your clothes.</li>
+  <li>If you use the size check (version 2.4 or later), the height, weight, usual clothing size and body measurements you enter are <strong>stored only on your device (in the Keychain in the iOS version, and in an area dedicated to the App encrypted with an Android Keystore key in the Android version)</strong> and are not synchronized to other devices. Garment sizes and measurements are stored on your device together with try-on results and your clothes.</li>
   <li>They are sent to our server, together with the images, only when you run a generation or Fit Report that uses the size check. Our server uses them only to calculate the size check, <strong>neither stores them nor writes them to logs</strong>, and discards them as soon as processing is complete.</li>
   <li>To the contractors that generate images and diagnoses (Sections 3-2 and 3-2-2), we send only the visual description calculated on our server (for example, "the hem falls around the knee") and the height and size labels, as text. <strong>Your weight and body measurements themselves are not sent to these contractors.</strong></li>
   <li>You can delete the body information you entered at any time from My Studio in the App. It is also deleted when you delete your account. All other features of the Service are available without entering it.</li>
@@ -151,11 +162,25 @@
 <h3>3-7. Style Profile Analysis (Personal Color, Body Type, Measurements; Optional)</h3>
 <ol>
   <li>Only when you run a personal color, body type or measurement analysis (version 2.4 or later; 1 credit each), the photos you choose, your answers to the body type questions (choices only) and your height are sent via our server to the analysis provider (OpenAI; Section 3-2-2). Our server <strong>neither stores nor logs</strong> the photos, answers or results, and discards them immediately after the analysis.</li>
-  <li>The results (your best colors, body type, estimated body measurements, etc.) are <strong>stored only on your device (Keychain)</strong> and are not synchronized to other devices. To show which photo each result is based on, a reduced copy of the photos used for the analysis is also stored only on your device (in the same area as Section 3-1). This copy is deleted when you run the analysis again or delete the result.</li>
+  <li>The results (your best colors, body type, estimated body measurements, etc.) are <strong>stored only on your device (as in Section 3-5, in the Keychain in the iOS version and in an area encrypted with an Android Keystore key in the Android version)</strong> and are not synchronized to other devices. To show which photo each result is based on, a reduced copy of the photos used for the analysis is also stored only on your device (in the same area as Section 3-1). This copy is deleted when you run the analysis again or delete the result.</li>
   <li>When you run a Fit Report, a summary of the saved results (your personal color type and the names of your best and difficult colors, your body type and its flattering and unflattering shapes, and the name of your body shape) is sent as text via our server to the provider for scoring and comments. <strong>The estimated body measurement values are not sent.</strong></li>
   <li>The estimated body measurements are added to the body information for the size check (Section 3-5) only if you choose to. Values you have already entered do not change unless you choose to replace them.</li>
   <li>You can delete the results at any time from "Style Profile" in the App. They are also deleted when you delete your account. All other features of the Service are available without the analysis.</li>
   <li>The analysis is an AI estimate and is not a substitute for a professional consultation.</li>
+</ol>
+
+<h3>3-8. On-Device Image Checks (Android Version)</h3>
+<ol>
+  <li>The Android version uses components provided by Google LLC that run on your device. It uses <strong>ML Kit</strong> to estimate the category of clothing (tops, shoes, etc.) from shared clothing images, and <strong>MediaPipe</strong> to check, for example, that only one person appears in a photo you register.</li>
+  <li>These checks are <strong>performed only on your device, and images are not sent off the device for them.</strong> (Images are sent at the time of generation as described in Sections 3-2 and 3-2-2.)</li>
+  <li>However, these components may send Google metrics for measuring their performance and usage (such as processing time, device model, OS version, App version, error types and a per-installation identifier). <strong>These do not include the photos themselves.</strong> We do not receive these metrics. Their handling by Google is governed by the <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">ML Kit data disclosure</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+</ol>
+
+<h3>3-9. Storage of the Identification Code (Google Block Store)</h3>
+<ol>
+  <li>The identification code used to let you use the App without signing in (Section 2) is created by the App on your device and stored only on your device. In the iOS version it is stored in the device’s Keychain and is not synchronized to other devices. In the Android version it is encrypted with an Android Keystore key and stored in an area dedicated to the App.</li>
+  <li>In the Android version, so that you can continue with the same account after deleting and reinstalling the App, a copy of this code is kept in <strong>Block Store</strong>, part of Google Play services. The copy is <strong>stored only on that device and is not sent to cloud backup.</strong> On devices where Google Play services are unavailable, the copy cannot be kept, and reinstalling creates a new account.</li>
+  <li>When you delete your account, both the code on the device and the copy in Block Store are deleted.</li>
 </ol>
 
 <h2>4. Purposes of Use</h2>
@@ -194,9 +219,19 @@
       <td>Operation of servers and the database (stored in a region in Japan)</td>
     </tr>
     <tr>
-      <th>Apple Inc.</th>
+      <th>Apple Inc.<br>(iOS version)</th>
       <td>Authentication information, purchase information</td>
       <td>Processing of login and payments. Handling by Apple is governed by the <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener">Apple Privacy Policy</a>.</td>
+    </tr>
+    <tr>
+      <th>Google LLC<br>(Google Play and Sign in with Google; Android version)</th>
+      <td>Authentication information (if you sign in with Google), purchase information (purchase token, per-account code)</td>
+      <td>Processing of login and payments, verification and acknowledgement of purchases, and processing of subscription notifications. Handling by Google is governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</td>
+    </tr>
+    <tr>
+      <th>Google LLC<br>(ML Kit and MediaPipe; Android version)</th>
+      <td>Performance and usage metrics of the components (Section 3-8; no images)</td>
+      <td>Provision and improvement of the on-device components. Sent directly from the components to Google; we do not receive them.</td>
     </tr>
   </tbody>
 </table>
@@ -211,6 +246,8 @@
   <li><strong>Image data</strong>: Not stored on our server (Section 3). Data on your device is retained until you delete it.</li>
   <li><strong>Generation request records</strong>: Automatically deleted once 30 days have passed from the date of recording.</li>
   <li><strong>Account information, credit information and purchase information</strong>: Retained while the account is active and for any period required by law. If you request deletion, we delete it through the procedure in Section 8.</li>
+  <li><strong>Information that remains after account deletion</strong>: To prevent the same purchase from being granted twice, purchase records (transaction ID or order number, product, number of credits granted, and date and time) are retained without a fixed period <strong>after their link to your account has been removed.</strong> For details, see <a href="delete_en.html">Deleting Your Account and Data</a>.</li>
+  <li><strong>Server access logs</strong>: Automatically deleted once 30 days have passed from the date of recording.</li>
 </ul>
 
 <h2>7. Security Control Measures</h2>
@@ -218,17 +255,17 @@
   <li>All communications are encrypted using HTTPS.</li>
   <li>API keys for generative AI are not included in the App itself and are managed as secrets on the server side.</li>
   <li>Reading from and writing to the database is restricted so that it can be performed only from our server.</li>
-  <li>The operating system’s data protection features are applied to images on your device so that they cannot be read while the device is locked.</li>
+  <li>Images on your device are stored in an area dedicated to the App so that other apps cannot read them. In the iOS version, the operating system’s data protection features are applied so that they cannot be read while the device is locked. In the Android version, body information, Style Profile results and the identification code are encrypted with an Android Keystore key.</li>
   <li>Our operations do not output image data or authentication tokens to logs.</li>
 </ul>
 
 <h2>8. Your Rights and Procedures</h2>
 <p>You may request disclosure, correction, suspension of use and erasure of your information held by us.</p>
 <ul>
-  <li><strong>Account deletion can be completed within the App</strong>: Settings (設定) → “Delete Account” (アカウントを削除). Your credits, plan and records on the server, and the photos and generated results on your device, are all deleted.</li>
+  <li><strong>Account deletion can be completed within the App</strong> (both the iOS and Android versions): Settings → “Delete Account”. Your credits, plan and records on the server, and the photos and generated results on your device, are all deleted. The steps, what is deleted and what remains, and how to make a request after deleting the App are described on the <a href="delete_en.html">Deleting Your Account and Data</a> page.</li>
   <li>Other requests and questions: <a href="mailto:kaiseiota0620@gmail.com">kaiseiota0620@gmail.com</a></li>
 </ul>
-<p>We will respond within a reasonable period, to the extent we can verify your identity. Please note that deleting your account causes any remaining credits to expire. This contact point can also be accessed from the App’s settings screen.</p>
+<p>We will respond within a reasonable period, to the extent we can verify your identity. Please note that deleting your account causes any remaining credits to expire. Deleting your account also does not automatically cancel App Store or Google Play subscriptions. This contact point can also be accessed from the App’s settings screen.</p>
 <h3>8-2. Consent</h3>
 <p>Consent to this Policy is obtained as follows.</p>
 <ul>
