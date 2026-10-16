@@ -97,7 +97,12 @@
     <tr>
       <th>Usage counts only</th>
       <td>Version 2.4 or later: <strong>counts</strong> of how far you got in the App and which actions you took (for example, “opened the full-body photo screen”, “saw a try-on result”, “shared”), together with the device type (iOS / Android) and the App version. <strong>These contain no information that identifies you or your device (no identifiers, photos, text or location), and are not linked to any other information.</strong></td>
-      <td>Sent automatically by the App (stored only as totals per day, device type and version)</td>
+      <td>Sent automatically by the App after you consent to this Policy during onboarding (stored only as totals per day, device type and version). <strong>You can stop this at any time with “Send usage counts (anonymous)” in Settings; stopping also discards counts not yet sent.</strong></td>
+    </tr>
+    <tr>
+      <th>Reports about AI output</th>
+      <td>Version 2.4 or later, only when you send one from “Report a problem” in the App: the reason you choose, an optional comment (up to 500 characters), the type of result reported (try-on, Fit Report or Style Profile), the device type, the App version, and a code derived from your identifier (not the identifier itself). <strong>No images are sent.</strong></td>
+      <td>Only when you send a report (automatically deleted after 180 days, or when you delete your account)</td>
     </tr>
     <tr>
       <th>Server access logs</th>
@@ -190,8 +195,14 @@
 
 <h3>3-10. Images and Videos for Sharing</h3>
 <ul>
-  <li>The images (cards) and short videos for sharing your try-on or analysis results (version 2.4 or later) are <strong>created on your device and are not sent to our server.</strong> A card includes your before photo and your invite code only if you choose so. Analysis cards never include your photos or body measurements.</li>
+  <li>The images (cards) and short videos for sharing your try-on or analysis results (version 2.4 or later) are <strong>created on your device and are not sent to our server.</strong> By default, try-on cards and videos include your before photo and your invite code; you can remove each on the share screen. “Which one?” cards include your invite code when it is available. Analysis cards never include your photos or body measurements.</li>
   <li>You choose where to send them with your device’s share feature. The App never posts or sends them automatically.</li>
+</ul>
+
+<h3>3-11. Reminders (Notifications; Optional)</h3>
+<ul>
+  <li>The “today’s free try-on” reminder (version 2.4 or later) is shown only if you choose to receive it, and is <strong>a notification scheduled and shown on your device.</strong> No information is sent to us for reminders.</li>
+  <li>You can turn reminders off at any time in the App’s Settings or in your iPhone settings.</li>
 </ul>
 
 <h2>4. Purposes of Use</h2>
@@ -203,6 +214,7 @@
   <li>To prevent unauthorized use and to operate the Service stably</li>
   <li>To respond to inquiries</li>
   <li>To improve the App (using the usage counts to understand where people get stuck; Section 2)</li>
+  <li>To respond to reports about AI output and to improve generation quality (Section 2)</li>
 </ol>
 <p>We do not use the information we obtain for ad delivery, behavioral targeting or profiling. Nor do we track users across other companies’ services.</p>
 
@@ -222,8 +234,8 @@
     </tr>
     <tr>
       <th>OpenAI<br>(OpenAI API)</th>
-      <td>Photos of people and clothing images (all generations in version 2.2 and later, and when High Quality is selected in version 2.1). When creating a Fit Report (version 2.2 and later), additionally try-on images and images of clothing saved in your wardrobe (up to 12 items)</td>
-      <td>Generation of try-on images and creation of Fit Reports. The <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI Privacy Policy</a> and the <a href="https://openai.com/policies/services-agreement/" target="_blank" rel="noopener">OpenAI Services Agreement</a> apply.</td>
+      <td>Photos of people and clothing images (all generations in version 2.2 and later, and when High Quality is selected in version 2.1). When creating a Fit Report (version 2.2 and later), additionally try-on images and images of clothing saved in your wardrobe (up to 12 items). For Style Profile analyses (version 2.4 and later), the face or full-body photos you choose, your answers to the body type questions and your height. When you use the size check (version 2.4 and later), your height, the garment’s size label and a description calculated from them (Section 3-5). When creating a Fit Report, a summary of your Style Profile results (Section 3-7)</td>
+      <td>Generation of try-on images, creation of Fit Reports and Style Profile analyses. The <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI Privacy Policy</a> and the <a href="https://openai.com/policies/services-agreement/" target="_blank" rel="noopener">OpenAI Services Agreement</a> apply.</td>
     </tr>
     <tr>
       <th>Google LLC<br>(Google Cloud Platform)</th>
@@ -261,6 +273,7 @@
   <li><strong>Information that remains after account deletion</strong>: To prevent the same purchase from being granted twice, purchase records (transaction ID or order number, product, number of credits granted, and date and time) are retained without a fixed period <strong>after their link to your account has been removed.</strong> For details, see <a href="delete_en.html">Deleting Your Account and Data</a>.</li>
   <li><strong>Server access logs</strong>: Automatically deleted once 30 days have passed from the date of recording.</li>
   <li><strong>Usage counts</strong>: Automatically deleted once 180 days have passed from the date of recording.</li>
+  <li><strong>Reports about AI output</strong>: Automatically deleted once 180 days have passed from receipt, or when you delete your account.</li>
 </ul>
 
 <h2>7. Security Control Measures</h2>
@@ -284,7 +297,8 @@
 <ul>
   <li>By starting to use the App (tapping “Start Free” at the end of the onboarding; in version 2.2 or earlier, logging in with Sign in with Apple), you are deemed to have consented to this Policy.</li>
   <li>With respect to the sending of images described in Section 3, you are deemed to have consented by executing a generation (including the creation of a Fit Report).</li>
-  <li>With respect to sending to the OpenAI API, your consent is additionally obtained on a confirmation screen shown once in the App before first use (Section 3-2-2).</li>
+  <li>With respect to sending to the OpenAI API, your consent is additionally obtained on a confirmation screen shown in the App before first use (Section 3-2-2). If what is sent expands (for example, Style Profile analyses and the size check in version 2.4), the confirmation screen is shown again.</li>
+  <li>Sending usage counts (Section 2) starts after you consent to this Policy during onboarding, and you can stop it at any time in the App’s Settings. Reminders (Section 3-11) are shown only if you choose to receive them.</li>
 </ul>
 <p>In particular, <strong>“sending of images at the time of generation” in Section 3 is central to the Service, and if you do not consent to it, the generation features cannot be used.</strong> You may withdraw your consent at any time by deleting your account, and we will not obtain any new information after withdrawal.</p>
 
