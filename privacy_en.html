@@ -13,7 +13,7 @@
 <header>
   <a class="app-name" href="index.html">TryOn</a>
   <h1>Privacy Policy</h1>
-  <p class="meta">Established: August 5, 2026 / Last updated: October 16, 2026</p>
+  <p class="meta">Established: August 5, 2026 / Last updated: October 21, 2026</p>
 </header>
 
 <main>
@@ -95,13 +95,18 @@
       <td>Received temporarily, only when an analysis is executed (results are stored on your device)</td>
     </tr>
     <tr>
+      <th>Hairstyle Match photos, face ratios and answers (optional)</th>
+      <td>Only if you use Hairstyle Match (version 2.4 or later): the face photo you choose (and optionally a second photo with your bangs lifted), <strong>ratio numbers calculated from the face photo on your device</strong> (such as the face length-to-width ratio and the jaw width ratio), your answers to the questions about your hair and routine (choices only), and a summary of your Style Profile results (described in Section 3-12). <strong>The analysis is optional.</strong></td>
+      <td>Received temporarily, only when an analysis is executed (results are stored on your device)</td>
+    </tr>
+    <tr>
       <th>Usage counts only</th>
       <td>Version 2.4 or later: <strong>counts</strong> of how far you got in the App and which actions you took (for example, “opened the full-body photo screen”, “saw a try-on result”, “shared”), together with the device type (iOS / Android) and the App version. <strong>These contain no information that identifies you or your device (no identifiers, photos, text or location), and are not linked to any other information.</strong></td>
       <td>Sent automatically by the App after you consent to this Policy during onboarding (stored only as totals per day, device type and version). <strong>You can stop this at any time with “Send usage counts (anonymous)” in Settings; stopping also discards counts not yet sent.</strong></td>
     </tr>
     <tr>
       <th>Reports about AI output</th>
-      <td>Version 2.4 or later, only when you send one from “Report a problem” in the App: the reason you choose, an optional comment (up to 500 characters), the type of result reported (try-on, Fit Report or Style Profile), the device type, the App version, and a code derived from your identifier (not the identifier itself). <strong>No images are sent.</strong></td>
+      <td>Version 2.4 or later, only when you send one from “Report a problem” in the App: the reason you choose, an optional comment (up to 500 characters), the type of result reported (try-on, Fit Report, Style Profile or Hairstyle Match), the device type, the App version, and a code derived from your identifier (not the identifier itself). <strong>No images are sent.</strong></td>
       <td>Only when you send a report (automatically deleted after 180 days, or when you delete your account)</td>
     </tr>
     <tr>
@@ -193,9 +198,9 @@
   <li>When you delete your account, both the code on the device and the copy in Block Store are deleted.</li>
 </ol>
 
-<h3>3-10. Images and Videos for Sharing</h3>
+<h3>3-10. Images for Sharing</h3>
 <ul>
-  <li>The images (cards) and short videos for sharing your try-on or analysis results (version 2.4 or later) are <strong>created on your device and are not sent to our server.</strong> By default, try-on cards and videos include your before photo and your invite code; you can remove each on the share screen. “Which one?” cards include your invite code when it is available. Analysis cards never include your photos or body measurements.</li>
+  <li>The images (cards) for sharing your try-on or analysis results (version 2.4 or later) are <strong>created on your device and are not sent to our server.</strong> By default, try-on cards include your before photo and your invite code; you can remove each on the share screen. “Which one?” cards include your invite code when it is available. Analysis cards never include your photos or body measurements. Hairstyle Match cards include the generated hairstyle images, and your original photo only if you choose; they never include the face ratio numbers.</li>
   <li>You choose where to send them with your device’s share feature. The App never posts or sends them automatically.</li>
 </ul>
 
@@ -204,6 +209,15 @@
   <li>The “today’s free try-on” reminder (version 2.4 or later) is shown only if you choose to receive it, and is <strong>a notification scheduled and shown on your device.</strong> No information is sent to us for reminders.</li>
   <li>You can turn reminders off at any time in the App’s Settings or in your iPhone settings.</li>
 </ul>
+
+<h3>3-12. Hairstyle Match (Optional)</h3>
+<ol>
+  <li>For Hairstyle Match (version 2.4 or later; 3 credits per analysis), the App detects the positions of facial landmarks (brows, eyes, nose, mouth and face outline) in the face photo you choose <strong>on your device</strong> and calculates ratio numbers such as the face length-to-width ratio and the jaw width ratio (using Apple’s Vision on iOS and Google’s ML Kit on Android; nothing is sent off the device for this). <strong>The landmark positions themselves are neither stored nor sent.</strong> We never use facial information to identify or authenticate you, for advertising, for analytics or for any other purpose.</li>
+  <li>Only when you run the analysis, the face photo (and optionally a second photo with your bangs lifted), the calculated ratio numbers, your answers (choices only) and a summary of your Style Profile results (such as your personal color and body type; Section 3-7) are sent via our server to the provider (OpenAI; Section 3-2-2) to analyze the hairstyles that suit you and to create an image of three hairstyles based on your face photo. Our server <strong>neither stores nor logs</strong> the photos, numbers, answers or results, and discards them as soon as the analysis is complete.</li>
+  <li>The results and the image are <strong>stored only on your device (the same area as in Section 3-1)</strong>, are not synced to other devices and are excluded from backups. You can delete them in the App at any time, and they are deleted when you delete your account.</li>
+  <li>Hairstyle Match results are not used for Fit Reports or your Style Profile.</li>
+  <li>The analysis is an AI estimate and is not a substitute for a professional consultation. The actual result depends on your hair and your stylist.</li>
+</ol>
 
 <h2>4. Purposes of Use</h2>
 <p>We use the information we obtain only for the following purposes:</p>
@@ -234,8 +248,8 @@
     </tr>
     <tr>
       <th>OpenAI<br>(OpenAI API)</th>
-      <td>Photos of people and clothing images (all generations in version 2.2 and later, and when High Quality is selected in version 2.1). When creating a Fit Report (version 2.2 and later), additionally try-on images and images of clothing saved in your wardrobe (up to 12 items). For Style Profile analyses (version 2.4 and later), the face or full-body photos you choose, your answers to the body type questions and your height. When you use the size check (version 2.4 and later), your height, the garment’s size label and a description calculated from them (Section 3-5). When creating a Fit Report, a summary of your Style Profile results (Section 3-7)</td>
-      <td>Generation of try-on images, creation of Fit Reports and Style Profile analyses. The <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI Privacy Policy</a> and the <a href="https://openai.com/policies/services-agreement/" target="_blank" rel="noopener">OpenAI Services Agreement</a> apply.</td>
+      <td>Photos of people and clothing images (all generations in version 2.2 and later, and when High Quality is selected in version 2.1). When creating a Fit Report (version 2.2 and later), additionally try-on images and images of clothing saved in your wardrobe (up to 12 items). For Style Profile analyses (version 2.4 and later), the face or full-body photos you choose, your answers to the body type questions and your height. For Hairstyle Match (version 2.4 and later), the face photo, the face ratio numbers calculated on your device, your answers and a summary of your Style Profile results (Section 3-12). When you use the size check (version 2.4 and later), your height, the garment’s size label and a description calculated from them (Section 3-5). When creating a Fit Report, a summary of your Style Profile results (Section 3-7)</td>
+      <td>Generation of try-on images, creation of Fit Reports, Style Profile analyses and Hairstyle Match. The <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI Privacy Policy</a> and the <a href="https://openai.com/policies/services-agreement/" target="_blank" rel="noopener">OpenAI Services Agreement</a> apply.</td>
     </tr>
     <tr>
       <th>Google LLC<br>(Google Cloud Platform)</th>
@@ -297,7 +311,7 @@
 <ul>
   <li>By starting to use the App (tapping “Start Free” at the end of the onboarding; in version 2.2 or earlier, logging in with Sign in with Apple), you are deemed to have consented to this Policy.</li>
   <li>With respect to the sending of images described in Section 3, you are deemed to have consented by executing a generation (including the creation of a Fit Report).</li>
-  <li>With respect to sending to the OpenAI API, your consent is additionally obtained on a confirmation screen shown in the App before first use (Section 3-2-2). If what is sent expands (for example, Style Profile analyses and the size check in version 2.4), the confirmation screen is shown again.</li>
+  <li>With respect to sending to the OpenAI API, your consent is additionally obtained on a confirmation screen shown in the App before first use (Section 3-2-2). If what is sent expands (for example, Style Profile analyses, the size check and Hairstyle Match in version 2.4), the confirmation screen is shown again.</li>
   <li>Sending usage counts (Section 2) starts after you consent to this Policy during onboarding, and you can stop it at any time in the App’s Settings. Reminders (Section 3-11) are shown only if you choose to receive them.</li>
 </ul>
 <p>In particular, <strong>“sending of images at the time of generation” in Section 3 is central to the Service, and if you do not consent to it, the generation features cannot be used.</strong> You may withdraw your consent at any time by deleting your account, and we will not obtain any new information after withdrawal.</p>
